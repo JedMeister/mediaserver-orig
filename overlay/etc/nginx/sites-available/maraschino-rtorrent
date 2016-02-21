@@ -1,0 +1,15 @@
+# Provides RPC access for the Maraschino rTorrent module.
+# The existing RPC access provided for ruTorrent doesn't 
+# work with the Maraschino plugin (self signed ssl cert).
+server {
+        listen 127.0.0.1:5000 default_server;
+        listen [::1]:5000 default_server;
+
+        server_name localhost;
+
+	location /RPC2 {
+		scgi_pass unix:/var/run/rtorrent/rpc.socket;
+		include     scgi_params;
+		scgi_param SCRIPT_NAME /RPC2;
+	}
+}

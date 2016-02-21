@@ -40,8 +40,8 @@ def main():
     if not password:
         d = Dialog('TurnKey Linux - First boot configuration')
         password = d.get_password(
-            "Torrent Server Password",
-            "Enter new admin password for ruTorrent.")
+            "Media Server Password",
+            "Enter new admin password for apps.")
 
     command = ['openssl', 'passwd', '-apr1', password]
 

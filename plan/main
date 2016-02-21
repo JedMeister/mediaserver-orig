@@ -11,3 +11,15 @@ clamdscan
 
 rtorrent
 tmux
+
+sabnzbdplus
+
+python-pip
+python-cheetah /* couchpotato/sickrage  */
+python-openssl
+
+build-essential
+python-dev
+libssl-dev
+libffi-dev
+/* marischino  */

@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+wget -q -O - http://download.opensuse.org/repositories/home:emby/Debian_8.0/Release.key | apt-key add -
+echo "deb http://download.opensuse.org/repositories/home:/emby/Debian_8.0/ /" >> /etc/apt/sources.list.d/emby-server.list
+apt-get update
+
+DEBIAN_FRONTEND=noninteractive apt-get --force-yes --assume-yes install emby-server

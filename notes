@@ -1,0 +1,8 @@
+
+rTorrent conf: 
+	/var/lib/rtorrent/.rtorrent.rc
+
+ruTorrent conf:
+	/var/www/rutorrent/conf/config.php
+
+
